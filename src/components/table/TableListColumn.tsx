@@ -51,12 +51,12 @@ const ModalCustom: FC<ModalCustomProps> = ({modalOpen , setModalOpen , userIdFor
     
     return (
     <Modal isOpen={modalOpen} toggle={toggle} className="border-none" centered={true} dir="rtl">
-            <ModalHeader ><span>
+            <ModalHeader className={TableListStyle.modal}><span>
         </span><h5>حذف ردیف</h5></ModalHeader>
-            <ModalBody>
+            <ModalBody className="border-none">
                 آیا از حذف این ردیف مطمين هستید؟
             </ModalBody>
-            <ModalFooter className="border-none">
+            <ModalFooter className={TableListStyle.modal}>
                 <Button className="btn btn-danger mx-2 px-3 text-center " onClick={() =>handelDeleteUserFromList()}> حذف</Button>
             </ModalFooter>
       </Modal>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-
 import { Formik, Form } from 'formik';
 import * as Yup from "yup";
 import { Input } from '../../components/common/input/Input';
